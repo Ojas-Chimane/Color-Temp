@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		26148893233A2645003481CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26148892233A2645003481CB /* AppDelegate.swift */; };
 		26148895233A2645003481CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26148894233A2645003481CB /* SceneDelegate.swift */; };
-		26148897233A2645003481CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26148896233A2645003481CB /* ViewController.swift */; };
+		26148897233A2645003481CB /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26148896233A2645003481CB /* ColorViewController.swift */; };
 		2614889A233A2645003481CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26148898233A2645003481CB /* Main.storyboard */; };
 		2614889D233A2645003481CB /* IOTAssignment2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2614889B233A2645003481CB /* IOTAssignment2.xcdatamodeld */; };
 		2614889F233A2648003481CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2614889E233A2648003481CB /* Assets.xcassets */; };
 		261488A2233A2648003481CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261488A0233A2648003481CB /* LaunchScreen.storyboard */; };
+		2625166B233F3D9C008715A7 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2625166A233F3D9C008715A7 /* TemperatureViewController.swift */; };
+		263DA980233E05CB008B2319 /* mountain.json in Resources */ = {isa = PBXBuildFile; fileRef = 263DA97F233E05CB008B2319 /* mountain.json */; };
 		264DE6C6233AF43D005988C5 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DE6C5233AF43D005988C5 /* ColorCollectionViewCell.swift */; };
 		264DE6C8233AF49B005988C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DE6C7233AF49B005988C5 /* Constants.swift */; };
 		264DE6CA233AFBC9005988C5 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DE6C9233AFBC9005988C5 /* ColorDetailViewController.swift */; };
@@ -21,6 +23,12 @@
 		264DE6CE233B2A69005988C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 264DE6CD233B2A69005988C5 /* GoogleService-Info.plist */; };
 		264DE6D0233B65FC005988C5 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DE6CF233B65FC005988C5 /* ColorModel.swift */; };
 		264DE6D2233B6619005988C5 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DE6D1233B6619005988C5 /* Temperature.swift */; };
+		26D079BE233F7BB000D105A6 /* partly-cloudy.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D079BA233F7BAD00D105A6 /* partly-cloudy.json */; };
+		26D079BF233F7BB000D105A6 /* weather-storm.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D079BB233F7BAE00D105A6 /* weather-storm.json */; };
+		26D079C0233F7BB000D105A6 /* shower.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D079BC233F7BAF00D105A6 /* shower.json */; };
+		26D079C1233F7BB000D105A6 /* weather-sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D079BD233F7BB000D105A6 /* weather-sunny.json */; };
+		26D079C5233F81DB00D105A6 /* WeatherHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D079C4233F81DB00D105A6 /* WeatherHistoryVC.swift */; };
+		26D079C7233F84C000D105A6 /* WeatherHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D079C6233F84C000D105A6 /* WeatherHistoryTableViewCell.swift */; };
 		42EFA03B18AF5CD7D2EB847F /* Pods_IOTAssignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FD94B2501309355D6262F /* Pods_IOTAssignment2.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,12 +36,14 @@
 		2614888F233A2645003481CB /* IOTAssignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOTAssignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26148892233A2645003481CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26148894233A2645003481CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26148896233A2645003481CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26148896233A2645003481CB /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		26148899233A2645003481CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2614889C233A2645003481CB /* IOTAssignment2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOTAssignment2.xcdatamodel; sourceTree = "<group>"; };
 		2614889E233A2648003481CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261488A1233A2648003481CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261488A3233A2648003481CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2625166A233F3D9C008715A7 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		263DA97F233E05CB008B2319 /* mountain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountain.json; sourceTree = "<group>"; };
 		264DE6C5233AF43D005988C5 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		264DE6C7233AF49B005988C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		264DE6C9233AFBC9005988C5 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +51,12 @@
 		264DE6CD233B2A69005988C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		264DE6CF233B65FC005988C5 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		264DE6D1233B6619005988C5 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		26D079BA233F7BAD00D105A6 /* partly-cloudy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "partly-cloudy.json"; path = "../../../../Downloads/partly-cloudy.json"; sourceTree = "<group>"; };
+		26D079BB233F7BAE00D105A6 /* weather-storm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "weather-storm.json"; sourceTree = "<group>"; };
+		26D079BC233F7BAF00D105A6 /* shower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shower.json; sourceTree = "<group>"; };
+		26D079BD233F7BB000D105A6 /* weather-sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "weather-sunny.json"; sourceTree = "<group>"; };
+		26D079C4233F81DB00D105A6 /* WeatherHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistoryVC.swift; sourceTree = "<group>"; };
+		26D079C6233F84C000D105A6 /* WeatherHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		454FD94B2501309355D6262F /* Pods_IOTAssignment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTAssignment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8322569F5674A2057A1BC7B5 /* Pods-IOTAssignment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTAssignment2.debug.xcconfig"; path = "Target Support Files/Pods-IOTAssignment2/Pods-IOTAssignment2.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB2933A1A7A8EF87E95ADFE /* Pods-IOTAssignment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTAssignment2.release.xcconfig"; path = "Target Support Files/Pods-IOTAssignment2/Pods-IOTAssignment2.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +97,8 @@
 			children = (
 				26148892233A2645003481CB /* AppDelegate.swift */,
 				26148894233A2645003481CB /* SceneDelegate.swift */,
-				264DE6D4233B663A005988C5 /* View */,
+				26BB2294233DF96500BECCDA /* Animation Assets */,
+				264DE6D4233B663A005988C5 /* Controllers */,
 				264DE6D6233B6694005988C5 /* Helper Files */,
 				264DE6D3233B6629005988C5 /* Model */,
 				264DE6D5233B6654005988C5 /* Cells */,
@@ -102,19 +119,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		264DE6D4233B663A005988C5 /* View */ = {
+		264DE6D4233B663A005988C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				26148896233A2645003481CB /* ViewController.swift */,
+				26148896233A2645003481CB /* ColorViewController.swift */,
 				264DE6C9233AFBC9005988C5 /* ColorDetailViewController.swift */,
+				2625166A233F3D9C008715A7 /* TemperatureViewController.swift */,
+				26D079C4233F81DB00D105A6 /* WeatherHistoryVC.swift */,
 			);
-			path = View;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		264DE6D5233B6654005988C5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				264DE6C5233AF43D005988C5 /* ColorCollectionViewCell.swift */,
+				26D079C6233F84C000D105A6 /* WeatherHistoryTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -128,6 +148,18 @@
 				264DE6C7233AF49B005988C5 /* Constants.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		26BB2294233DF96500BECCDA /* Animation Assets */ = {
+			isa = PBXGroup;
+			children = (
+				263DA97F233E05CB008B2319 /* mountain.json */,
+				26D079BA233F7BAD00D105A6 /* partly-cloudy.json */,
+				26D079BC233F7BAF00D105A6 /* shower.json */,
+				26D079BB233F7BAE00D105A6 /* weather-storm.json */,
+				26D079BD233F7BB000D105A6 /* weather-sunny.json */,
+			);
+			path = "Animation Assets";
 			sourceTree = "<group>";
 		};
 		84183A464F01C5F1AEEC9E2B /* Pods */ = {
@@ -207,9 +239,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D079C1233F7BB000D105A6 /* weather-sunny.json in Resources */,
+				26D079BF233F7BB000D105A6 /* weather-storm.json in Resources */,
 				261488A2233A2648003481CB /* LaunchScreen.storyboard in Resources */,
 				264DE6CE233B2A69005988C5 /* GoogleService-Info.plist in Resources */,
+				263DA980233E05CB008B2319 /* mountain.json in Resources */,
+				26D079BE233F7BB000D105A6 /* partly-cloudy.json in Resources */,
 				2614889F233A2648003481CB /* Assets.xcassets in Resources */,
+				26D079C0233F7BB000D105A6 /* shower.json in Resources */,
 				2614889A233A2645003481CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,13 +301,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				264DE6C6233AF43D005988C5 /* ColorCollectionViewCell.swift in Sources */,
-				26148897233A2645003481CB /* ViewController.swift in Sources */,
+				26148897233A2645003481CB /* ColorViewController.swift in Sources */,
 				26148893233A2645003481CB /* AppDelegate.swift in Sources */,
+				2625166B233F3D9C008715A7 /* TemperatureViewController.swift in Sources */,
+				26D079C5233F81DB00D105A6 /* WeatherHistoryVC.swift in Sources */,
 				2614889D233A2645003481CB /* IOTAssignment2.xcdatamodeld in Sources */,
 				26148895233A2645003481CB /* SceneDelegate.swift in Sources */,
 				264DE6CC233AFC6A005988C5 /* CutomNavigationViewController.swift in Sources */,
 				264DE6C8233AF49B005988C5 /* Constants.swift in Sources */,
 				264DE6CA233AFBC9005988C5 /* ColorDetailViewController.swift in Sources */,
+				26D079C7233F84C000D105A6 /* WeatherHistoryTableViewCell.swift in Sources */,
 				264DE6D2233B6619005988C5 /* Temperature.swift in Sources */,
 				264DE6D0233B65FC005988C5 /* ColorModel.swift in Sources */,
 			);
