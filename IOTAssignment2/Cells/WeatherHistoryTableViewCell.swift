@@ -10,6 +10,10 @@ import UIKit
 
 class WeatherHistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var temperatureDateLabel: UILabel!
+    @IBOutlet weak var temperatureTimeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

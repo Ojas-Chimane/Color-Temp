@@ -29,6 +29,8 @@
 		26D079C1233F7BB000D105A6 /* weather-sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D079BD233F7BB000D105A6 /* weather-sunny.json */; };
 		26D079C5233F81DB00D105A6 /* WeatherHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D079C4233F81DB00D105A6 /* WeatherHistoryVC.swift */; };
 		26D079C7233F84C000D105A6 /* WeatherHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D079C6233F84C000D105A6 /* WeatherHistoryTableViewCell.swift */; };
+		26D0AA7123406CCD0092E2E0 /* broken-clouds.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D0AA7023406CCD0092E2E0 /* broken-clouds.json */; };
+		26D0AA73234075B40092E2E0 /* weather-mist.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D0AA72234075B40092E2E0 /* weather-mist.json */; };
 		42EFA03B18AF5CD7D2EB847F /* Pods_IOTAssignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FD94B2501309355D6262F /* Pods_IOTAssignment2.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		26D079BD233F7BB000D105A6 /* weather-sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "weather-sunny.json"; sourceTree = "<group>"; };
 		26D079C4233F81DB00D105A6 /* WeatherHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistoryVC.swift; sourceTree = "<group>"; };
 		26D079C6233F84C000D105A6 /* WeatherHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		26D0AA7023406CCD0092E2E0 /* broken-clouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "broken-clouds.json"; sourceTree = "<group>"; };
+		26D0AA72234075B40092E2E0 /* weather-mist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "weather-mist.json"; sourceTree = "<group>"; };
 		454FD94B2501309355D6262F /* Pods_IOTAssignment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTAssignment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8322569F5674A2057A1BC7B5 /* Pods-IOTAssignment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTAssignment2.debug.xcconfig"; path = "Target Support Files/Pods-IOTAssignment2/Pods-IOTAssignment2.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB2933A1A7A8EF87E95ADFE /* Pods-IOTAssignment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTAssignment2.release.xcconfig"; path = "Target Support Files/Pods-IOTAssignment2/Pods-IOTAssignment2.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		26BB2294233DF96500BECCDA /* Animation Assets */ = {
 			isa = PBXGroup;
 			children = (
+				26D0AA72234075B40092E2E0 /* weather-mist.json */,
+				26D0AA7023406CCD0092E2E0 /* broken-clouds.json */,
 				263DA97F233E05CB008B2319 /* mountain.json */,
 				26D079BA233F7BAD00D105A6 /* partly-cloudy.json */,
 				26D079BC233F7BAF00D105A6 /* shower.json */,
@@ -240,11 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D079C1233F7BB000D105A6 /* weather-sunny.json in Resources */,
+				26D0AA73234075B40092E2E0 /* weather-mist.json in Resources */,
 				26D079BF233F7BB000D105A6 /* weather-storm.json in Resources */,
 				261488A2233A2648003481CB /* LaunchScreen.storyboard in Resources */,
 				264DE6CE233B2A69005988C5 /* GoogleService-Info.plist in Resources */,
 				263DA980233E05CB008B2319 /* mountain.json in Resources */,
 				26D079BE233F7BB000D105A6 /* partly-cloudy.json in Resources */,
+				26D0AA7123406CCD0092E2E0 /* broken-clouds.json in Resources */,
 				2614889F233A2648003481CB /* Assets.xcassets in Resources */,
 				26D079C0233F7BB000D105A6 /* shower.json in Resources */,
 				2614889A233A2645003481CB /* Main.storyboard in Resources */,

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Color Pallete-->
+        <!--Color Analyser-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ColorViewController" customModule="IOTAssignment2" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Color Pallete" id="EbK-b6-LWb"/>
+                    <navigationItem key="navigationItem" title="Color Analyser" id="EbK-b6-LWb"/>
                     <connections>
                         <outlet property="colorCollectionView" destination="13x-sg-uht" id="18i-cG-Rga"/>
                         <segue destination="dLK-CN-N8q" kind="show" identifier="COLOR_DETAIL_SEGUE" id="4pE-xi-5rZ"/>
@@ -241,7 +241,7 @@
             </objects>
             <point key="canvasLocation" x="-1664" y="215"/>
         </scene>
-        <!--Weather-->
+        <!--Temperature Analyser-->
         <scene sceneID="GYS-Kw-FUw">
             <objects>
                 <viewController id="5d7-ev-0nN" customClass="TemperatureViewController" customModule="IOTAssignment2" customModuleProvider="target" sceneMemberID="viewController">
@@ -280,14 +280,14 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-Pw-EDZ">
-                                <rect key="frame" x="16" y="406.5" width="382" height="0.5"/>
+                                <rect key="frame" x="16" y="398.5" width="382" height="0.5"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="Nj0-tC-3Ra"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-O5-o13">
-                                <rect key="frame" x="8" y="423" width="398" height="150"/>
+                                <rect key="frame" x="8" y="407" width="398" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nch-L0-tlD">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="150"/>
@@ -325,19 +325,20 @@
                             <constraint firstItem="EwQ-8U-VgL" firstAttribute="trailing" secondItem="V8V-O5-o13" secondAttribute="trailing" constant="8" id="7tQ-jV-TPq"/>
                             <constraint firstItem="EwQ-8U-VgL" firstAttribute="trailing" secondItem="1ak-Pw-EDZ" secondAttribute="trailing" constant="16" id="Cuw-XI-fwi"/>
                             <constraint firstItem="EwQ-8U-VgL" firstAttribute="trailing" secondItem="PZh-iR-0vc" secondAttribute="trailing" constant="8" id="D6T-3h-ykH"/>
-                            <constraint firstItem="1ak-Pw-EDZ" firstAttribute="top" secondItem="PZh-iR-0vc" secondAttribute="bottom" constant="16" id="Xc5-jz-eIh"/>
+                            <constraint firstItem="1ak-Pw-EDZ" firstAttribute="top" secondItem="PZh-iR-0vc" secondAttribute="bottom" constant="8" id="Xc5-jz-eIh"/>
                             <constraint firstItem="PZh-iR-0vc" firstAttribute="top" secondItem="EwQ-8U-VgL" secondAttribute="top" constant="8" id="Z7Y-VW-Wsk"/>
                             <constraint firstItem="V8V-O5-o13" firstAttribute="leading" secondItem="EwQ-8U-VgL" secondAttribute="leading" constant="8" id="cth-MI-a4s"/>
                             <constraint firstItem="1ak-Pw-EDZ" firstAttribute="leading" secondItem="EwQ-8U-VgL" secondAttribute="leading" constant="16" id="dmS-Uo-ks6"/>
                             <constraint firstItem="PZh-iR-0vc" firstAttribute="leading" secondItem="EwQ-8U-VgL" secondAttribute="leading" constant="8" id="f0c-CT-bxA"/>
-                            <constraint firstItem="V8V-O5-o13" firstAttribute="top" secondItem="1ak-Pw-EDZ" secondAttribute="bottom" constant="16" id="w1y-7l-mbN"/>
+                            <constraint firstItem="V8V-O5-o13" firstAttribute="top" secondItem="1ak-Pw-EDZ" secondAttribute="bottom" constant="8" id="w1y-7l-mbN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EwQ-8U-VgL"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Weather" id="FM7-J7-yfe"/>
+                    <navigationItem key="navigationItem" title="Temperature Analyser" id="FM7-J7-yfe"/>
                     <connections>
                         <outlet property="outsideTemperatureAnimationView" destination="yr0-CX-yvG" id="vXO-fY-cAp"/>
                         <outlet property="outsideTemperatureLabel" destination="XNU-Sz-nrm" id="dOB-nd-cyX"/>
+                        <outlet property="roomTemperatureLabel" destination="dA8-eO-WV5" id="Dpu-2G-Opy"/>
                         <outlet property="weatherConditionLabel" destination="QJl-Kx-gco" id="Nju-ps-eCP"/>
                     </connections>
                 </viewController>
@@ -345,7 +346,7 @@
             </objects>
             <point key="canvasLocation" x="356.52173913043481" y="677.67857142857144"/>
         </scene>
-        <!--Room Temperatures-->
+        <!--Temperature History-->
         <scene sceneID="6fc-Gb-gXt">
             <objects>
                 <viewController id="PJJ-Pj-ZxG" customClass="WeatherHistoryVC" customModule="IOTAssignment2" customModuleProvider="target" sceneMemberID="viewController">
@@ -367,23 +368,23 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="biK-f9-NZN">
                                                     <rect key="frame" x="8" y="8" width="382" height="66"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-IF-zUl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-IF-zUl">
                                                             <rect key="frame" x="0.0" y="0.0" width="187" height="66"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-58-rK0">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-58-rK0">
                                                             <rect key="frame" x="195" y="0.0" width="187" height="66"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxO-Vm-nPe">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="33"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxO-Vm-nPe">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="29"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-gE-jf2">
-                                                                    <rect key="frame" x="0.0" y="33" width="187" height="33"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-gE-jf2">
+                                                                    <rect key="frame" x="0.0" y="37" width="187" height="29"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -400,6 +401,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="biK-f9-NZN" secondAttribute="trailing" constant="8" id="W0q-0s-jTX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="temperatureDateLabel" destination="xxO-Vm-nPe" id="ryx-h2-exZ"/>
+                                            <outlet property="temperatureLabel" destination="l7y-IF-zUl" id="vAP-YZ-ttK"/>
+                                            <outlet property="temperatureTimeLabel" destination="GN8-gE-jf2" id="Ghl-V3-kyU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -417,17 +423,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ywF-CJ-bhX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Room Temperatures" id="F5b-Qv-Xyl"/>
+                    <navigationItem key="navigationItem" title="Temperature History" id="F5b-Qv-Xyl"/>
+                    <connections>
+                        <outlet property="temperatureTableView" destination="Koe-RS-0uc" id="8aC-OI-af1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nj3-MD-gfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1286.9565217391305" y="677.67857142857144"/>
         </scene>
-        <!--Wheather-->
+        <!--Temperature Analyser-->
         <scene sceneID="f6y-Km-73Q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k95-GP-dcr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wheather" id="LOV-Up-moh"/>
+                    <tabBarItem key="tabBarItem" title="Temperature Analyser" image="thermometer.sun" catalog="system" id="LOV-Up-moh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="FSh-53-wAX">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -442,11 +451,11 @@
             </objects>
             <point key="canvasLocation" x="-552.17391304347825" y="677.67857142857144"/>
         </scene>
-        <!--Item-->
+        <!--Color Analyser-->
         <scene sceneID="e7l-lp-16K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8HP-eB-p3E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Nfh-Sp-Jcf"/>
+                    <tabBarItem key="tabBarItem" title="Color Analyser" image="eyedropper.full" catalog="system" id="Nfh-Sp-Jcf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CID-pD-bjP">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -462,4 +471,8 @@
             <point key="canvasLocation" x="-552" y="-15"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eyedropper.full" catalog="system" width="64" height="58"/>
+        <image name="thermometer.sun" catalog="system" width="52" height="64"/>
+    </resources>
 </document>

@@ -7,24 +7,60 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class WeatherHistoryVC: UIViewController {
 
+    var db: Firestore!
+    var temperatureList = [Temperature]()
+    @IBOutlet weak var temperatureTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Setup firebase
+        db = Firestore.firestore()
+        
+        fetchTemperatureList()
     }
+    
+    private func fetchTemperatureList(){
+        db.collection("temp-readings").order(by: "timestamp", descending: true).getDocuments() { (querySnapshot, err) in
+                   if let err = err {
+                       print("Error getting documents: \(err)")
+                   } else {
+                       for document in querySnapshot!.documents {
+                           print("Firestore working")
+                           print("\(document.documentID) => \(document.data())")
+                           let date = document.get("date") as! String
+                           let time = document.get("time") as! String
+                           let tempVal = document.get("temp_val") as! Int
+                           let tempModel = Temperature(date: date, time: time, temp_val: tempVal)
+                           self.temperatureList.append(tempModel)
+                           
+                           DispatchQueue.main.async {
+                               self.temperatureTableView.reloadData()
+                           }
+                       }
+                   }
+               }
+    }
+    
+    
     
 }
 
 extension WeatherHistoryVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return temperatureList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ROOM_HISTORY_IDENTIFIER") as! WeatherHistoryTableViewCell
+        cell.temperatureDateLabel.text = temperatureList[indexPath.row].date
+        cell.temperatureTimeLabel.text = temperatureList[indexPath.row].time
+        cell.temperatureLabel.text = ("\(temperatureList[indexPath.row].temp_val!)") + "°C"
         return cell
     }
     

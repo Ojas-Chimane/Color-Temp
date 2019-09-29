@@ -31,10 +31,9 @@ class ColorDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Selected Detail index:", selectedColor)
         
+        // Setup UI elements
         backgroundView.layer.cornerRadius = 15
-        
         backgroundView.backgroundColor = UIColor(red: CGFloat(detailRedValue!)/255.0, green: CGFloat(detailGreenValue!)/255.0, blue: CGFloat(detailBlueValue!)/255.0,alpha: 1.0)
         
         hexValueLabel.text = hexValue
@@ -57,16 +56,4 @@ class ColorDetailViewController: UIViewController {
         lottieAnimationView.play()
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

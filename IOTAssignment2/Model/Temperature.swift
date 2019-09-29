@@ -8,3 +8,15 @@
 
 import Foundation
 
+class Temperature{
+    var date:String?
+    var time:String?
+    var temp_val:Int?
+    
+    init(date:String,time:String,temp_val:Int){
+        self.date = date
+        self.time = time
+        self.temp_val = temp_val
+    }
+    
+}
